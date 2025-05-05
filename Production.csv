@@ -1,0 +1,965 @@
+Production Food Name,Ingredients,Quantity,Expiry
+Production Food Name 1,Eggs,120.0,10
+Production Food Name 1,Maple Syrup,12.5,180
+Production Food Name 1,Molasses,2.0,180
+Production Food Name 1,Tamarind,2.0,180
+Production Food Name 1,Soybean,2.0,30
+Production Food Name 1,Tofu,1111.0,7
+Production Food Name 1,Sour Cream,50.0,7
+Production Food Name 2,Soybean,50.0,30
+Production Food Name 2,Zucchini,50.0,5
+Production Food Name 2,Leeks,880.0,5
+Production Food Name 2,Sour Cream,20.0,7
+Production Food Name 3,Production Food Name 80,599.0,
+Production Food Name 3,Celery,3780.0,5
+Production Food Name 3,Black Pepper,100.0,180
+Production Food Name 4,Celery,1000.0,5
+Production Food Name 4,Turmeric,250.0,365
+Production Food Name 4,Garam Masala,80.0,180
+Production Food Name 4,Red Beans,25.0,180
+Production Food Name 4,Kidney Beans,15.0,180
+Production Food Name 4,Black Pepper,15.0,180
+Production Food Name 4,Rice,15.0,180
+Production Food Name 4,Soybean,15.0,30
+Production Food Name 5,Maple Syrup,0.43,180
+Production Food Name 5,Oil,4.25,180
+Production Food Name 5,Leeks,2.13,5
+Production Food Name 5,Rice,2.13,180
+Production Food Name 5,Bread,3.83,5
+Production Food Name 5,Soybean,0.3,30
+Production Food Name 5,Rice,0.3,180
+Production Food Name 5,Black Pepper,0.09,180
+Production Food Name 5,Sour Cream,2.55,7
+Production Food Name 5,Mayonnaise,94.44,30
+Production Food Name 6,Mayonnaise,1111.0,30
+Production Food Name 6,Cucumber,40.0,5
+Production Food Name 7,Lettuce,110.0,4
+Production Food Name 7,Soybean,0.29,30
+Production Food Name 7,Rice,0.98,180
+Production Food Name 7,Bread Crumbs,0.61,60
+Production Food Name 7,Black Pepper,0.37,180
+Production Food Name 7,Leeks,1.95,5
+Production Food Name 7,Mozzarella Cheese,0.1,10
+Production Food Name 7,Maple Syrup,0.39,180
+Production Food Name 8,Rice,500.0,180
+Production Food Name 8,Celery,3780.0,5
+Production Food Name 8,Tomato Ketchup,100.0,30
+Production Food Name 9,Mayonnaise,1000.0,30
+Production Food Name 9,Rice,50.0,180
+Production Food Name 9,Almonds,75.0,180
+Production Food Name 9,Rice,15.0,180
+Production Food Name 10,Wheat Flour,1000.0,90
+Production Food Name 10,Rice,50.0,180
+Production Food Name 10,Almonds,75.0,180
+Production Food Name 10,Tamarind,5.0,180
+Production Food Name 10,Yogurt,5.0,10
+Production Food Name 10,Molasses,5.0,180
+Production Food Name 10,Soybean,15.0,30
+Production Food Name 10,Rice,15.0,180
+Production Food Name 10,Black Pepper,20.0,180
+Production Food Name 11,Red Beans,5.0,180
+Production Food Name 11,Cocoa Powder,30.0,365
+Production Food Name 11,Flour,75.0,90
+Production Food Name 11,Kidney Beans,5.0,180
+Production Food Name 11,Soybean,2.0,30
+Production Food Name 11,Rice,2.0,180
+Production Food Name 11,Maple Syrup,5.0,180
+Production Food Name 11,Tofu,1111.0,7
+Production Food Name 12,Wheat Flour,1000.0,90
+Production Food Name 12,Flour,75.0,90
+Production Food Name 12,Kidney Beans,5.0,180
+Production Food Name 12,Cocoa Powder,30.0,365
+Production Food Name 12,Red Beans,5.0,180
+Production Food Name 12,Maple Syrup,5.0,180
+Production Food Name 12,Soybean,10.0,30
+Production Food Name 12,Rice,5.0,180
+Production Food Name 13,Egg,97.0,10
+Production Food Name 13,Leeks,4.5,5
+Production Food Name 13,Rice,4.5,180
+Production Food Name 13,Oil,9.0,180
+Production Food Name 13,Bread,3.9,5
+Production Food Name 13,Soybean,0.3,30
+Production Food Name 13,Rice,0.3,180
+Production Food Name 13,Black Pepper,0.09,180
+Production Food Name 13,Maple Syrup,0.44,180
+Production Food Name 13,Sour Cream,2.61,7
+Production Food Name 14,Baking Soda,1000.0,180
+Production Food Name 14,Garam Masala,400.0,180
+Production Food Name 14,Black Pepper,315.0,180
+Production Food Name 15,Celery,730.0,5
+Production Food Name 15,Turmeric,200.0,365
+Production Food Name 15,Refined Oil,50.0,180
+Production Food Name 15,Rice,10.0,180
+Production Food Name 15,Black Pepper,10.0,180
+Production Food Name 16,Vinegar,1500.0,365
+Production Food Name 16,Sweet Corn,400.0,5
+Production Food Name 16,Rice,100.0,180
+Production Food Name 16,Kidney Beans,6.0,180
+Production Food Name 16,Honey,200.0,365
+Production Food Name 16,Soybean,25.0,30
+Production Food Name 16,Black Pepper,75.0,180
+Production Food Name 17,Cashews,1000.0,180
+Production Food Name 17,Corn,3000.0,7
+Production Food Name 17,Leeks,500.0,5
+Production Food Name 17,Rice,250.0,180
+Production Food Name 17,Red Chilli Flakes,150.0,180
+Production Food Name 17,Bread Crumbs,100.0,60
+Production Food Name 17,Kidney Beans,75.0,180
+Production Food Name 17,Zucchini,100.0,5
+Production Food Name 17,Black Pepper,50.0,180
+Production Food Name 17,Oregano,7.5,180
+Production Food Name 17,Sour Cream,500.0,7
+Production Food Name 17,Celery,3000.0,5
+Production Food Name 18,Mint,1000.0,4
+Production Food Name 18,Rice,50.0,180
+Production Food Name 18,Maple Syrup,15.0,180
+Production Food Name 18,Almonds,40.0,180
+Production Food Name 18,Rice,75.0,180
+Production Food Name 18,Leeks,150.0,5
+Production Food Name 18,Soybean,15.0,30
+Production Food Name 18,Red Beans,40.0,180
+Production Food Name 19,Garlic Paste,200.0,10
+Production Food Name 19,Celery,800.0,5
+Production Food Name 20,Egg,100.51,10
+Production Food Name 20,Leeks,2.26,5
+Production Food Name 20,Rice,2.26,180
+Production Food Name 20,Oil,4.52,180
+Production Food Name 20,Soybean,0.9,30
+Production Food Name 20,Rice,0.9,180
+Production Food Name 20,Black Pepper,0.09,180
+Production Food Name 20,Maple Syrup,0.9,180
+Production Food Name 20,Sour Cream,3.75,7
+Production Food Name 20,Ginger Paste,6.88,10
+Production Food Name 21,Onion,1000.0,10
+Production Food Name 21,Green Chilli,20.0,7
+Production Food Name 21,Salt,20.0,365
+Production Food Name 21,Rice,20.0,180
+Production Food Name 21,Leeks,40.0,5
+Production Food Name 21,Black Pepper,10.0,180
+Production Food Name 21,Soybean,5.0,30
+Production Food Name 21,Rice,5.0,180
+Production Food Name 21,Sour Cream,25.0,7
+Production Food Name 21,Maple Syrup,20.0,180
+Production Food Name 21,Zucchini,15.0,5
+Production Food Name 22,Bread Crumbs,6.2,60
+Production Food Name 22,Rice,10.0,180
+Production Food Name 22,Paneer,5.0,7
+Production Food Name 22,Soybean,3.0,30
+Production Food Name 22,Leeks,25.0,5
+Production Food Name 22,Leeks,4.0,5
+Production Food Name 22,Salt,4.0,365
+Production Food Name 22,Green Chilli,4.0,7
+Production Food Name 22,Coconut Milk,2.0,7
+Production Food Name 22,Mayonnaise,4.0,30
+Production Food Name 22,Maple Syrup,5.0,180
+Production Food Name 22,Spinach,75.0,3
+Production Food Name 22,Milk,25.0,5
+Production Food Name 22,Butter,30.0,30
+Production Food Name 22,Tofu,1111.0,7
+Production Food Name 22,Flour,20.0,90
+Production Food Name 22,Nutmeg,20.0,180
+Production Food Name 22,Black Pepper,3.0,180
+Production Food Name 23,Cucumber,40.0,5
+Production Food Name 23,Salt,1000.0,365
+Production Food Name 24,Sugar,1000.0,365
+Production Food Name 24,Cucumber,40.0,5
+Production Food Name 25,Spinach,225.0,3
+Production Food Name 25,Rice,6.0,180
+Production Food Name 25,Onion,11.0,10
+Production Food Name 25,Coconut Milk,11.0,7
+Production Food Name 25,Maple Syrup,22.5,180
+Production Food Name 25,Soybean,4.0,30
+Production Food Name 25,Bread Crumbs,15.0,60
+Production Food Name 25,Rice,22.5,180
+Production Food Name 25,Tofu,1111.0,7
+Production Food Name 25,Sour Cream,7.5,7
+Production Food Name 26,Egg,1111.0,10
+Production Food Name 26,Soybean,5.0,30
+Production Food Name 26,Sour Cream,10.0,7
+Production Food Name 26,Rice,8.0,180
+Production Food Name 27,Egg,1111.0,10
+Production Food Name 27,Cardamom,10.0,180
+Production Food Name 27,Black Pepper,10.0,180
+Production Food Name 27,Bread Crumbs,10.0,60
+Production Food Name 27,Rice,10.0,180
+Production Food Name 27,Soybean,5.0,30
+Production Food Name 27,Maple Syrup,10.0,180
+Production Food Name 27,Paneer,10.0,7
+Production Food Name 27,Sour Cream,5.0,7
+Production Food Name 28,Salt,10.0,365
+Production Food Name 28,Spinach,150.0,3
+Production Food Name 28,Kidney Beans,10.0,180
+Production Food Name 28,Bread Crumbs,5.0,60
+Production Food Name 28,Black Pepper,10.0,180
+Production Food Name 28,Rice,10.0,180
+Production Food Name 28,Butter,10.0,30
+Production Food Name 28,Turmeric,15.0,365
+Production Food Name 28,Coconut Milk,10.0,7
+Production Food Name 28,Green Chilli,10.0,7
+Production Food Name 28,Oregano,1.0,180
+Production Food Name 28,Soybean,4.0,30
+Production Food Name 28,Cinnamon,1111.0,180
+Production Food Name 29,Soybean,5.0,30
+Production Food Name 29,Tofu,1111.0,7
+Production Food Name 29,Rice,8.0,180
+Production Food Name 29,Sour Cream,10.0,7
+Production Food Name 30,Spinach,71.2,3
+Production Food Name 30,Bread Crumbs,6.2,60
+Production Food Name 30,Rice,10.0,180
+Production Food Name 30,Tofu,1111.0,7
+Production Food Name 30,Leeks,12.0,5
+Production Food Name 30,Coriander,20.0,180
+Production Food Name 30,Leeks,10.0,5
+Production Food Name 30,Mint,10.0,4
+Production Food Name 30,Black Pepper,15.0,180
+Production Food Name 30,Leeks,3.8,5
+Production Food Name 30,Green Chilli,4.6,7
+Production Food Name 30,Salt,6.2,365
+Production Food Name 30,Soybean,2.6,30
+Production Food Name 30,Coconut Milk,1.0,7
+Production Food Name 30,Mayonnaise,1.0,30
+Production Food Name 30,Paneer,5.0,7
+Production Food Name 30,Sour Cream,25.0,7
+Production Food Name 31,Black Pepper,10.0,180
+Production Food Name 31,Bread Crumbs,10.0,60
+Production Food Name 31,Rice,10.0,180
+Production Food Name 31,Soybean,2.0,30
+Production Food Name 31,Maple Syrup,10.0,180
+Production Food Name 31,Cardamom,10.0,180
+Production Food Name 31,Tofu,1111.0,7
+Production Food Name 31,Sour Cream,5.0,7
+Production Food Name 32,Black Pepper,1538.46,180
+Production Food Name 32,Soybean,5.0,30
+Production Food Name 32,Rice,5.0,180
+Production Food Name 33,Flour,500.0,90
+Production Food Name 33,Nutmeg,500.0,180
+Production Food Name 33,Leeks,150.0,5
+Production Food Name 33,Rice,100.0,180
+Production Food Name 33,Bread Crumbs,125.0,60
+Production Food Name 33,Black Pepper,200.0,180
+Production Food Name 34,Bread Crumbs,5.0,60
+Production Food Name 34,Rice,10.0,180
+Production Food Name 34,Soybean,2.0,30
+Production Food Name 34,Spinach,63.4,3
+Production Food Name 34,Mint,76.8,4
+Production Food Name 34,Rice,1.0,180
+Production Food Name 34,Tofu,1111.0,7
+Production Food Name 34,Leeks,20.0,5
+Production Food Name 34,Paneer,5.0,7
+Production Food Name 34,Coriander,20.0,180
+Production Food Name 34,Leeks,10.0,5
+Production Food Name 34,Onion,2.0,10
+Production Food Name 34,Leeks,3.0,5
+Production Food Name 34,Red Beans,4.0,180
+Production Food Name 34,Maple Syrup,4.0,180
+Production Food Name 34,Sour Cream,25.0,7
+Production Food Name 35,Flour,200.0,90
+Production Food Name 35,Nutmeg,1000.0,180
+Production Food Name 35,Thyme,500.0,180
+Production Food Name 35,Leeks,700.0,5
+Production Food Name 35,Corn,875.0,7
+Production Food Name 35,Soybean,10.0,30
+Production Food Name 35,Honey,150.0,365
+Production Food Name 35,Rice,2.0,180
+Production Food Name 35,Zucchini,30.0,5
+Production Food Name 36,Cardamom,10.0,180
+Production Food Name 36,Black Pepper,10.0,180
+Production Food Name 36,Bread Crumbs,10.0,60
+Production Food Name 36,Rice,10.0,180
+Production Food Name 36,Soybean,2.0,30
+Production Food Name 36,Honey,1000.0,365
+Production Food Name 36,Maple Syrup,10.0,180
+Production Food Name 36,Paneer,20.0,7
+Production Food Name 36,Sour Cream,5.0,7
+Production Food Name 37,Production Food Name 89,100.0,
+Production Food Name 37,Spinach,100.0,3
+Production Food Name 37,Cinnamon,800.0,180
+Production Food Name 38,Coconut Milk,1111.0,7
+Production Food Name 38,Soybean,5.0,30
+Production Food Name 38,Rice,5.0,180
+Production Food Name 39,Cardamom,10.0,180
+Production Food Name 39,Black Pepper,10.0,180
+Production Food Name 39,Bread Crumbs,10.0,60
+Production Food Name 39,Rice,10.0,180
+Production Food Name 39,Soybean,10.0,30
+Production Food Name 39,Maple Syrup,10.0,180
+Production Food Name 39,Coconut Milk,1111.0,7
+Production Food Name 39,Sour Cream,5.0,7
+Production Food Name 40,Spinach,6.54,3
+Production Food Name 40,Bread Crumbs,3.37,60
+Production Food Name 40,Rice,3.93,180
+Production Food Name 40,Rice,0.45,180
+Production Food Name 40,Green Chilli,1.69,7
+Production Food Name 40,Coconut Milk,2.81,7
+Production Food Name 40,Soybean,2.25,30
+Production Food Name 40,Salt,1.69,365
+Production Food Name 40,Wheat Flour,169.89,90
+Production Food Name 40,Black Pepper,0.79,180
+Production Food Name 40,Black Pepper,2.81,180
+Production Food Name 40,Sour Cream,8.99,7
+Production Food Name 41,Rice,25.0,180
+Production Food Name 41,Red Beans,20.0,180
+Production Food Name 41,Mint,1000.0,4
+Production Food Name 41,Maple Syrup,15.0,180
+Production Food Name 41,Sour Cream,25.0,7
+Production Food Name 42,Spinach,27000.0,3
+Production Food Name 42,Leeks,800.0,5
+Production Food Name 42,Corn,2500.0,7
+Production Food Name 42,Leeks,200.0,5
+Production Food Name 42,Black Pepper,0.5,180
+Production Food Name 42,Flour,2.0,90
+Production Food Name 42,Oats,2500.0,
+Production Food Name 43,Black Pepper,50.0,180
+Production Food Name 43,Soybean,30.0,30
+Production Food Name 43,Refined Oil,700.0,180
+Production Food Name 43,Almonds,250.0,180
+Production Food Name 43,Butter,100.0,30
+Production Food Name 43,Black Pepper,100.0,180
+Production Food Name 43,Zucchini,250.0,5
+Production Food Name 43,Red Beans,250.0,180
+Production Food Name 44,Lettuce,122.22,4
+Production Food Name 44,Soybean,0.27,30
+Production Food Name 44,Rice,0.89,180
+Production Food Name 44,Bread Crumbs,0.56,60
+Production Food Name 44,Black Pepper,0.44,180
+Production Food Name 44,Leeks,1.78,5
+Production Food Name 44,Maple Syrup,1.82,180
+Production Food Name 44,Salt,0.44,365
+Production Food Name 44,Green Chilli,0.44,7
+Production Food Name 44,Coconut Milk,0.27,7
+Production Food Name 44,Onion,2.67,10
+Production Food Name 44,Oregano,0.03,180
+Production Food Name 44,Sour Cream,2.22,7
+Production Food Name 45,Production Food Name 46,400.0,
+Production Food Name 45,Celery,1200.0,5
+Production Food Name 46,Flour,500.0,90
+Production Food Name 46,Nutmeg,600.0,180
+Production Food Name 46,Milk,500.0,5
+Production Food Name 46,Leeks,500.0,5
+Production Food Name 46,Rice,200.0,180
+Production Food Name 46,Bread Crumbs,125.0,60
+Production Food Name 46,Soybean,40.0,30
+Production Food Name 46,Leeks,60.0,5
+Production Food Name 46,Salt,40.0,365
+Production Food Name 46,Sour Cream,100.0,7
+Production Food Name 47,Production Food Name 38,500.0,
+Production Food Name 47,Zucchini,10.0,5
+Production Food Name 47,Lemon Juice,75.0,7
+Production Food Name 47,Black Pepper,1.0,180
+Production Food Name 47,Rice,15.0,180
+Production Food Name 47,Cheese,5.0,14
+Production Food Name 47,Cocoa Powder,35.0,365
+Production Food Name 47,Rice,5.0,180
+Production Food Name 47,Soybean,8.0,30
+Production Food Name 47,Maple Syrup,5.0,180
+Production Food Name 47,Fresh Cream,1.0,7
+Production Food Name 47,Sour Cream,100.0,7
+Production Food Name 48,Celery,3780.0,5
+Production Food Name 48,Raisins,900.0,180
+Production Food Name 48,Cashews,450.0,180
+Production Food Name 49,Maple Syrup,0.42,180
+Production Food Name 49,Oil,4.19,180
+Production Food Name 49,Leeks,2.1,5
+Production Food Name 49,Rice,2.1,180
+Production Food Name 49,Soybean,0.84,30
+Production Food Name 49,Rice,0.84,180
+Production Food Name 49,Black Pepper,0.09,180
+Production Food Name 49,Sour Cream,2.52,7
+Production Food Name 49,Mayonnaise,138.9,30
+Production Food Name 49,Ginger Paste,3.69,10
+Production Food Name 50,Turmeric,2520.0,365
+Production Food Name 50,Zucchini,28.0,5
+Production Food Name 50,Soybean,80.0,30
+Production Food Name 50,Black Pepper,260.0,180
+Production Food Name 50,Green Peas,1500.0,7
+Production Food Name 51,Celery,2000.0,5
+Production Food Name 51,Spinach,100.0,3
+Production Food Name 51,Kidney Beans,10.0,180
+Production Food Name 51,Bread Crumbs,15.0,60
+Production Food Name 51,Rice,15.0,180
+Production Food Name 51,Butter,20.0,30
+Production Food Name 51,Turmeric,10.0,365
+Production Food Name 51,Salt,10.0,365
+Production Food Name 51,Coconut Milk,10.0,7
+Production Food Name 51,Green Chilli,10.0,7
+Production Food Name 51,Black Pepper,25.0,180
+Production Food Name 52,Bread Crumbs,6.2,60
+Production Food Name 52,Rice,10.0,180
+Production Food Name 52,Leeks,25.0,5
+Production Food Name 52,Soybean,2.0,30
+Production Food Name 52,Cardamom,4.0,180
+Production Food Name 52,Leeks,4.0,5
+Production Food Name 52,Salt,4.0,365
+Production Food Name 52,Green Chilli,5.0,7
+Production Food Name 52,Black Pepper,5.0,180
+Production Food Name 52,Coconut Milk,1.0,7
+Production Food Name 52,Maple Syrup,4.0,180
+Production Food Name 52,Rice,1.0,180
+Production Food Name 52,Onion,3.0,10
+Production Food Name 52,Coriander,10.0,180
+Production Food Name 52,Leeks,5.0,5
+Production Food Name 52,Mint,40.0,4
+Production Food Name 53,Almonds,10.0,180
+Production Food Name 53,Onion,113.0,10
+Production Food Name 53,Production Food Name 30,150.0,
+Production Food Name 53,Production Food Name 102,100.0,
+Production Food Name 53,Leeks,10.0,5
+Production Food Name 53,Mint,10.0,4
+Production Food Name 53,Production Food Name 94,8.0,
+Production Food Name 54,Oil,10.0,180
+Production Food Name 54,Onion,150.0,10
+Production Food Name 54,Zucchini,2.0,5
+Production Food Name 54,Soybean,1.0,30
+Production Food Name 54,Salt,1.0,365
+Production Food Name 54,Coconut Milk,0.45,7
+Production Food Name 54,Nutmeg,0.91,180
+Production Food Name 55,Production Food Name 31,173.33,
+Production Food Name 55,Production Food Name 75,150.0,
+Production Food Name 55,Black Pepper,0.4,180
+Production Food Name 55,Soybean,0.6,30
+Production Food Name 55,Coconut Milk,0.12,7
+Production Food Name 55,Red Beans,0.8,180
+Production Food Name 55,Maple Syrup,0.8,180
+Production Food Name 55,Salt,0.12,365
+Production Food Name 55,Zucchini,0.6,5
+Production Food Name 55,Zucchini,0.8,5
+Production Food Name 55,Mint,0.5,4
+Production Food Name 55,Sour Cream,4.0,7
+Production Food Name 56,Almonds,2.0,180
+Production Food Name 56,Production Food Name 30,170.0,
+Production Food Name 56,Production Food Name 77,272.0,
+Production Food Name 56,Mint,11.0,4
+Production Food Name 56,Zucchini,4.0,5
+Production Food Name 56,Soybean,2.0,30
+Production Food Name 56,Red Beans,2.0,180
+Production Food Name 57,Production Food Name 31,180.0,
+Production Food Name 57,Production Food Name 89,150.0,
+Production Food Name 57,Black Pepper,1.56,180
+Production Food Name 57,Coconut Milk,0.94,7
+Production Food Name 57,Soybean,1.56,30
+Production Food Name 57,Red Beans,3.13,180
+Production Food Name 57,Salt,0.47,365
+Production Food Name 57,Zucchini,3.13,5
+Production Food Name 57,Maple Syrup,1.88,180
+Production Food Name 57,Leeks,15.0,5
+Production Food Name 57,Eggs,8.0,10
+Production Food Name 57,Carrot,8.0,7
+Production Food Name 57,Leeks,5.0,5
+Production Food Name 57,Paneer,4.0,7
+Production Food Name 57,Sour Cream,6.25,7
+Production Food Name 58,Production Food Name 96,265.0,
+Production Food Name 58,Production Food Name 102,60.0,
+Production Food Name 58,Production Food Name 89,40.0,
+Production Food Name 58,Maple Syrup,0.77,180
+Production Food Name 58,Soybean,0.58,30
+Production Food Name 58,Rice,0.19,180
+Production Food Name 58,Mozzarella Cheese,0.05,10
+Production Food Name 58,Production Food Name 94,8.0,
+Production Food Name 59,Almonds,2.0,180
+Production Food Name 59,Production Food Name 77,272.0,
+Production Food Name 59,Mint,11.0,4
+Production Food Name 59,Zucchini,4.0,5
+Production Food Name 59,Soybean,2.0,30
+Production Food Name 59,Red Beans,2.0,180
+Production Food Name 59,Production Food Name 28,120.0,
+Production Food Name 60,Onion,119.23,10
+Production Food Name 60,Production Food Name 102,60.0,
+Production Food Name 60,Production Food Name 89,40.0,
+Production Food Name 60,Production Food Name 36,133.333,
+Production Food Name 60,Maple Syrup,0.77,180
+Production Food Name 60,Soybean,0.58,30
+Production Food Name 60,Rice,0.19,180
+Production Food Name 60,Mozzarella Cheese,0.05,10
+Production Food Name 60,Production Food Name 94,8.0,
+Production Food Name 61,Production Food Name 75,150.0,
+Production Food Name 61,Black Pepper,0.4,180
+Production Food Name 61,Soybean,0.6,30
+Production Food Name 61,Coconut Milk,0.12,7
+Production Food Name 61,Red Beans,0.8,180
+Production Food Name 61,Maple Syrup,0.8,180
+Production Food Name 61,Salt,0.12,365
+Production Food Name 61,Zucchini,0.6,5
+Production Food Name 61,Zucchini,0.8,5
+Production Food Name 61,Mint,0.5,4
+Production Food Name 61,Sour Cream,4.0,7
+Production Food Name 62,Production Food Name 36,133.333,
+Production Food Name 62,Production Food Name 75,150.0,
+Production Food Name 62,Black Pepper,0.4,180
+Production Food Name 62,Soybean,0.6,30
+Production Food Name 62,Coconut Milk,0.12,7
+Production Food Name 62,Red Beans,0.8,180
+Production Food Name 62,Maple Syrup,0.8,180
+Production Food Name 62,Salt,0.12,365
+Production Food Name 62,Zucchini,0.6,5
+Production Food Name 62,Zucchini,0.8,5
+Production Food Name 62,Sour Cream,4.0,7
+Production Food Name 63,Production Food Name 89,150.0,
+Production Food Name 63,Black Pepper,1.56,180
+Production Food Name 63,Coconut Milk,0.94,7
+Production Food Name 63,Soybean,1.56,30
+Production Food Name 63,Red Beans,3.13,180
+Production Food Name 63,Salt,0.47,365
+Production Food Name 63,Zucchini,3.13,5
+Production Food Name 63,Maple Syrup,1.88,180
+Production Food Name 63,Leeks,15.0,5
+Production Food Name 63,Eggs,8.0,10
+Production Food Name 63,Carrot,8.0,7
+Production Food Name 63,Leeks,5.0,5
+Production Food Name 63,Paneer,4.0,7
+Production Food Name 63,Sour Cream,6.25,7
+Production Food Name 63,Vanilla Essence,100.0,365
+Production Food Name 64,Rice,1.0,180
+Production Food Name 64,Zucchini,0.3,5
+Production Food Name 64,Oats,30.0,
+Production Food Name 64,Production Food Name 31,180.0,
+Production Food Name 64,Vanilla,5.0,365
+Production Food Name 64,Production Food Name 80,60.0,
+Production Food Name 64,Black Pepper,0.5,180
+Production Food Name 64,Soybean,0.7,30
+Production Food Name 64,Maple Syrup,1.0,180
+Production Food Name 64,Red Beans,1.0,180
+Production Food Name 64,Sour Cream,2.0,7
+Production Food Name 65,Mustard Seeds,76.9,365
+Production Food Name 65,Leeks,20.5,5
+Production Food Name 65,Paneer,2.2,7
+Production Food Name 65,Oil,12.8,180
+Production Food Name 65,Sour Cream,12.8,7
+Production Food Name 65,Rice,3.8,180
+Production Food Name 65,Cardamom,0.6,180
+Production Food Name 65,Green Chilli,2.6,7
+Production Food Name 65,Soybean,2.7,30
+Production Food Name 65,Rice,0.8,180
+Production Food Name 65,Salt,1.4,365
+Production Food Name 66,Production Food Name 28,90.0,
+Production Food Name 66,Production Food Name 77,40.0,
+Production Food Name 66,Production Food Name 102,60.0,
+Production Food Name 66,Rice,0.1,180
+Production Food Name 66,Nutmeg,0.5,180
+Production Food Name 66,Soybean,0.15,30
+Production Food Name 66,Production Food Name 96,255.0,
+Production Food Name 66,Production Food Name 94,8.0,
+Production Food Name 67,Production Food Name 89,150.0,
+Production Food Name 67,Black Pepper,1.56,180
+Production Food Name 67,Coconut Milk,0.94,7
+Production Food Name 67,Soybean,1.56,30
+Production Food Name 67,Red Beans,3.13,180
+Production Food Name 67,Salt,0.47,365
+Production Food Name 67,Zucchini,3.13,5
+Production Food Name 67,Maple Syrup,1.88,180
+Production Food Name 67,Leeks,15.0,5
+Production Food Name 67,Eggs,8.0,10
+Production Food Name 67,Carrot,8.0,7
+Production Food Name 67,Leeks,5.0,5
+Production Food Name 67,Paneer,4.0,7
+Production Food Name 67,Production Food Name 37,100.0,
+Production Food Name 67,Sour Cream,6.25,7
+Production Food Name 68,Onion,113.0,10
+Production Food Name 68,Production Food Name 80,40.0,
+Production Food Name 68,Leeks,10.0,5
+Production Food Name 68,Almonds,10.0,180
+Production Food Name 68,Production Food Name 102,60.0,
+Production Food Name 68,Vanilla Essence,100.0,365
+Production Food Name 68,Production Food Name 94,8.0,
+Production Food Name 69,Coconut Milk,1.0,7
+Production Food Name 69,Black Pepper,2.0,180
+Production Food Name 69,Bay Leaf,1.0,180
+Production Food Name 69,Leeks,5.0,5
+Production Food Name 69,Maple Syrup,3.0,180
+Production Food Name 69,Salt,1.0,365
+Production Food Name 69,Mozzarella Cheese,1.0,10
+Production Food Name 69,Almonds,7.0,180
+Production Food Name 69,Rice,3.0,180
+Production Food Name 69,Leeks,5.0,5
+Production Food Name 69,Flour,2.0,90
+Production Food Name 69,Milk,112.5,5
+Production Food Name 69,Soybean,2.0,30
+Production Food Name 69,Production Food Name 102,45.0,
+Production Food Name 69,Sour Cream,2.0,7
+Production Food Name 70,Onion,200.0,10
+Production Food Name 70,Leeks,10.0,5
+Production Food Name 70,Bread Crumbs,10.0,60
+Production Food Name 70,Rice,10.0,180
+Production Food Name 70,Mint Leaves,200.0,4
+Production Food Name 70,Soybean,2.0,30
+Production Food Name 70,Cardamom,5.0,180
+Production Food Name 70,Spinach,40.0,3
+Production Food Name 70,Corn,40.0,7
+Production Food Name 70,Coriander Leaves,35.0,4
+Production Food Name 70,Rice,1.0,180
+Production Food Name 70,Green Chilli,3.0,7
+Production Food Name 70,Black Pepper,6.0,180
+Production Food Name 70,Maple Syrup,5.0,180
+Production Food Name 70,Sour Cream,21.0,7
+Production Food Name 70,Production Food Name 94,8.0,
+Production Food Name 71,Maple Syrup,0.33,180
+Production Food Name 71,Soybean,0.33,30
+Production Food Name 71,Rice,0.02,180
+Production Food Name 71,Production Food Name 96,255.0,
+Production Food Name 71,Mozzarella Cheese,0.03,10
+Production Food Name 71,Production Food Name 102,80.0,
+Production Food Name 71,Production Food Name 30,128.0,
+Production Food Name 71,Production Food Name 94,8.0,
+Production Food Name 72,Production Food Name 88,300.0,
+Production Food Name 72,Production Food Name 30,170.0,
+Production Food Name 72,Almonds,7.14,180
+Production Food Name 72,Zucchini,0.71,5
+Production Food Name 72,Black Pepper,0.36,180
+Production Food Name 72,Mint,10.0,4
+Production Food Name 72,Zucchini,0.71,5
+Production Food Name 72,Red Beans,2.14,180
+Production Food Name 73,Red Beans,50000.0,180
+Production Food Name 73,Spring Onion,4000.0,4
+Production Food Name 74,Corn,300.0,7
+Production Food Name 74,Leeks,2000.0,5
+Production Food Name 74,Rice,500.0,180
+Production Food Name 74,Bread Crumbs,250.0,60
+Production Food Name 74,Leeks,100.0,5
+Production Food Name 74,Milk,6000.0,5
+Production Food Name 74,Soy Sauce,25.0,180
+Production Food Name 74,Zucchini,50.0,5
+Production Food Name 74,Black Pepper,50.0,180
+Production Food Name 74,Cardamom,25.0,180
+Production Food Name 74,Coconut Milk,50.0,7
+Production Food Name 74,Soybean,15.0,30
+Production Food Name 74,Mayonnaise,200.0,30
+Production Food Name 74,Flour,50.0,90
+Production Food Name 74,Sour Cream,250.0,7
+Production Food Name 75,Corn,500.0,7
+Production Food Name 75,Leeks,5000.0,5
+Production Food Name 75,Rice,1000.0,180
+Production Food Name 75,Bread Crumbs,700.0,60
+Production Food Name 75,Leeks,300.0,5
+Production Food Name 75,Coriander,167.0,180
+Production Food Name 75,Soy Sauce,50.0,180
+Production Food Name 75,Zucchini,50.0,5
+Production Food Name 75,Black Pepper,75.0,180
+Production Food Name 75,Cardamom,20.0,180
+Production Food Name 75,Coconut Milk,100.0,7
+Production Food Name 75,Soybean,13.0,30
+Production Food Name 75,Cashews,500.0,180
+Production Food Name 75,Turmeric,100.0,365
+Production Food Name 75,Sour Cream,1266.0,7
+Production Food Name 76,Mustard Seeds,5000.0,365
+Production Food Name 76,Leeks,250.0,5
+Production Food Name 76,Leeks,100.0,5
+Production Food Name 76,Bread Crumbs,50.0,60
+Production Food Name 76,Rice,50.0,180
+Production Food Name 76,Cardamom,50.0,180
+Production Food Name 76,Black Pepper,50.0,180
+Production Food Name 76,Green Chilli,50.0,7
+Production Food Name 76,Coconut Milk,50.0,7
+Production Food Name 76,Zucchini,50.0,5
+Production Food Name 76,Soybean,15.0,30
+Production Food Name 76,Butter,200.0,30
+Production Food Name 77,Corn,30000.0,7
+Production Food Name 77,Leeks,5400.0,5
+Production Food Name 77,Production Food Name 93,600.0,
+Production Food Name 77,Coriander,3000.0,180
+Production Food Name 77,Mayonnaise,40.0,30
+Production Food Name 77,Coconut Milk,135.0,7
+Production Food Name 77,Zucchini,1200.0,5
+Production Food Name 77,Black Pepper,400.0,180
+Production Food Name 77,Almonds,1300.0,180
+Production Food Name 77,Mint,3000.0,4
+Production Food Name 77,Cashews,1000.0,180
+Production Food Name 78,Chilli Sauce,6000.0,30
+Production Food Name 78,Leeks,500.0,5
+Production Food Name 78,Ginger Paste,50.0,10
+Production Food Name 78,Bread Crumbs,100.0,60
+Production Food Name 78,Rice,200.0,180
+Production Food Name 78,Cardamom,25.0,180
+Production Food Name 78,Black Pepper,50.0,180
+Production Food Name 78,Green Chilli,50.0,7
+Production Food Name 78,Corn,2000.0,7
+Production Food Name 78,Zucchini,50.0,5
+Production Food Name 78,Soybean,25.0,30
+Production Food Name 78,Coconut Milk,50.0,7
+Production Food Name 78,Tomato,50.0,5
+Production Food Name 78,Zucchini,400.0,5
+Production Food Name 78,Almonds,500.0,180
+Production Food Name 78,Turmeric,200.0,365
+Production Food Name 78,Sour Cream,271.8,7
+Production Food Name 79,Spinach,1750.0,3
+Production Food Name 79,Kidney Beans,100.0,180
+Production Food Name 79,Bread Crumbs,150.0,60
+Production Food Name 79,Rice,100.0,180
+Production Food Name 79,Butter,250.0,30
+Production Food Name 79,Corn,300.0,7
+Production Food Name 79,Zucchini,100.0,5
+Production Food Name 79,Coconut Milk,100.0,7
+Production Food Name 79,Green Chilli,100.0,7
+Production Food Name 79,Black Pepper,150.0,180
+Production Food Name 79,Carrot,10.0,7
+Production Food Name 79,Leeks,50.0,5
+Production Food Name 79,Soybean,10.0,30
+Production Food Name 80,Leeks,1500.0,5
+Production Food Name 80,Corn,1500.0,7
+Production Food Name 80,Bread Crumbs,250.0,60
+Production Food Name 80,Rice,300.0,180
+Production Food Name 80,Cabbage,5000.0,7
+Production Food Name 80,Bay Leaf,1400.0,180
+Production Food Name 80,Paneer,300.0,7
+Production Food Name 80,Beetroot,300.0,10
+Production Food Name 80,Zucchini,400.0,5
+Production Food Name 80,Green Beans,150.0,5
+Production Food Name 80,Pumpkin,400.0,10
+Production Food Name 80,Bottle Gourd,75.0,4
+Production Food Name 80,Soy Sauce,75.0,180
+Production Food Name 80,Brinjal,3000.0,5
+Production Food Name 80,Cardamom,700.0,180
+Production Food Name 80,Black Pepper,100.0,180
+Production Food Name 80,Soybean,150.0,30
+Production Food Name 80,Zucchini,100.0,5
+Production Food Name 80,Rice,100.0,180
+Production Food Name 81,Spinach,1500.0,3
+Production Food Name 81,Leeks,75.0,5
+Production Food Name 81,Bread Crumbs,250.0,60
+Production Food Name 81,Rice,200.0,180
+Production Food Name 81,Butter,25.0,30
+Production Food Name 81,Coriander,350.0,180
+Production Food Name 81,Rice,15.0,180
+Production Food Name 81,Coconut Milk,25.0,7
+Production Food Name 81,Mushroom,10.0,5
+Production Food Name 81,Black Pepper,50.0,180
+Production Food Name 81,Maple Syrup,15.0,180
+Production Food Name 81,Onion,15.0,10
+Production Food Name 81,Soybean,10.0,30
+Production Food Name 81,Mint,250.0,4
+Production Food Name 81,Leeks,150.0,5
+Production Food Name 81,Chicken,15.0,5
+Production Food Name 82,Bread Crumbs,510.0,60
+Production Food Name 82,Leeks,510.0,5
+Production Food Name 82,Rice,790.0,180
+Production Food Name 82,Fish,100.0,3
+Production Food Name 82,Turmeric,4200.0,365
+Production Food Name 82,Prawns,160.0,2
+Production Food Name 82,Zucchini,115.0,5
+Production Food Name 82,Soybean,200.0,30
+Production Food Name 82,Maple Syrup,65.0,180
+Production Food Name 82,Cocoa Powder,200.0,365
+Production Food Name 82,Paneer,100.0,7
+Production Food Name 82,Sour Cream,700.0,7
+Production Food Name 83,Bread Crumbs,255.0,60
+Production Food Name 83,Leeks,425.0,5
+Production Food Name 83,Rice,425.0,180
+Production Food Name 83,Turmeric,4200.0,365
+Production Food Name 83,Milk,1275.0,5
+Production Food Name 83,Zucchini,340.0,5
+Production Food Name 83,Prawns,150.0,2
+Production Food Name 83,Maple Syrup,85.0,180
+Production Food Name 83,Production Food Name 84,500.0,
+Production Food Name 83,Cocoa Powder,250.0,365
+Production Food Name 83,Soybean,50.0,30
+Production Food Name 83,Sour Cream,500.0,7
+Production Food Name 84,Bread Crumbs,400.0,60
+Production Food Name 84,Turmeric,700.0,365
+Production Food Name 84,Zucchini,1300.0,5
+Production Food Name 84,Soybean,400.0,30
+Production Food Name 84,Leeks,400.0,5
+Production Food Name 84,Butter,2000.0,30
+Production Food Name 84,Rice,400.0,180
+Production Food Name 84,Nutmeg,200.0,180
+Production Food Name 84,Sour Cream,4000.0,7
+Production Food Name 85,Turmeric,4200.0,365
+Production Food Name 85,Bread Crumbs,135.0,60
+Production Food Name 85,Zucchini,900.0,5
+Production Food Name 85,Soybean,150.0,30
+Production Food Name 85,Fenugreek Leaves,575.0,5
+Production Food Name 85,Maple Syrup,45.0,180
+Production Food Name 85,Cocoa Powder,200.0,365
+Production Food Name 85,Sour Cream,350.0,7
+Production Food Name 86,Leeks,500.0,5
+Production Food Name 86,Bread Crumbs,300.0,60
+Production Food Name 86,Rice,500.0,180
+Production Food Name 86,Milk,3000.0,5
+Production Food Name 86,Prawns,200.0,2
+Production Food Name 86,Zucchini,300.0,5
+Production Food Name 86,Paneer,180.0,7
+Production Food Name 86,Maple Syrup,50.0,180
+Production Food Name 86,Soybean,20.0,30
+Production Food Name 86,Cocoa Powder,120.0,365
+Production Food Name 86,Sour Cream,500.0,7
+Production Food Name 87,Bread Crumbs,430.0,60
+Production Food Name 87,Leeks,1425.0,5
+Production Food Name 87,Rice,710.0,180
+Production Food Name 87,Milk,5700.0,5
+Production Food Name 87,Prawns,735.0,2
+Production Food Name 87,Zucchini,710.0,5
+Production Food Name 87,Maple Syrup,140.0,180
+Production Food Name 87,Soybean,20.0,30
+Production Food Name 87,Cocoa Powder,100.0,365
+Production Food Name 87,Pumpkin,400.0,10
+Production Food Name 87,Sour Cream,700.0,7
+Production Food Name 88,Leeks,10000.0,5
+Production Food Name 88,Leeks,350.0,5
+Production Food Name 88,Corn,3500.0,7
+Production Food Name 88,Coriander,1250.0,180
+Production Food Name 88,Turmeric Powder,1000.0,365
+Production Food Name 88,Lemon Juice,500.0,7
+Production Food Name 88,Cardamom,100.0,180
+Production Food Name 88,Salt,80.0,365
+Production Food Name 88,Green Chilli,150.0,7
+Production Food Name 88,Black Pepper,250.0,180
+Production Food Name 88,Almonds,1000.0,180
+Production Food Name 88,Maple Syrup,300.0,180
+Production Food Name 88,Soybean,150.0,30
+Production Food Name 88,Nutmeg,11.0,180
+Production Food Name 88,Bottle Gourd,12.0,4
+Production Food Name 88,Asafoetida,5.0,365
+Production Food Name 88,Soy Sauce,13.0,180
+Production Food Name 88,Zucchini,15.0,5
+Production Food Name 88,Green Beans,13.0,5
+Production Food Name 88,Chana Dal,12.0,180
+Production Food Name 88,Urad Dal,12.0,180
+Production Food Name 88,Zucchini,150.0,5
+Production Food Name 88,Mint,1000.0,4
+Production Food Name 88,Mozzarella Cheese,3.0,10
+Production Food Name 88,Sour Cream,1850.0,7
+Production Food Name 88,Production Food Name 93,700.0,
+Production Food Name 89,Corn,4000.0,7
+Production Food Name 89,Leeks,5000.0,5
+Production Food Name 89,Coconut Milk,50.0,7
+Production Food Name 89,Butter,300.0,30
+Production Food Name 89,Rice,15.0,180
+Production Food Name 89,Soy Sauce,67.0,180
+Production Food Name 89,Zucchini,67.0,5
+Production Food Name 89,Black Pepper,100.0,180
+Production Food Name 89,Cardamom,75.0,180
+Production Food Name 89,Soybean,50.0,30
+Production Food Name 89,Nutmeg,5.0,180
+Production Food Name 89,Green Beans,10.0,5
+Production Food Name 89,Leeks,25.0,5
+Production Food Name 89,Sour Cream,1000.0,7
+Production Food Name 89,Production Food Name 93,400.0,
+Production Food Name 90,Toor Dal,50.0,180
+Production Food Name 91,Coconut Milk,3000.0,7
+Production Food Name 91,Zucchini,750.0,5
+Production Food Name 91,Turmeric,1750.0,365
+Production Food Name 91,Maple Syrup,102.0,180
+Production Food Name 91,Soybean,75.0,30
+Production Food Name 91,Prawns,600.0,2
+Production Food Name 91,Butter,1500.0,30
+Production Food Name 91,Rice,600.0,180
+Production Food Name 91,Bread Crumbs,500.0,60
+Production Food Name 91,Leeks,1300.0,5
+Production Food Name 91,Nutmeg,900.0,180
+Production Food Name 91,Sour Cream,2400.0,7
+Production Food Name 92,Rice,1110.0,180
+Production Food Name 92,Zucchini,185.0,5
+Production Food Name 92,Maple Syrup,125.0,180
+Production Food Name 92,Prawns,925.0,2
+Production Food Name 92,Leeks,1295.0,5
+Production Food Name 92,Bread Crumbs,370.0,60
+Production Food Name 92,Milk,3700.0,5
+Production Food Name 92,Turmeric,3700.0,365
+Production Food Name 92,Soybean,110.0,30
+Production Food Name 92,Sour Cream,925.0,7
+Production Food Name 92,Production Food Name 84,500.0,
+Production Food Name 93,Bread Crumbs,2100.0,60
+Production Food Name 93,Rice,3000.0,180
+Production Food Name 93,Sour Cream,3000.0,7
+Production Food Name 94,Leeks,6000.0,5
+Production Food Name 94,Sour Cream,750.0,7
+Production Food Name 95,Leeks,1300.0,5
+Production Food Name 95,Flour,1850.0,90
+Production Food Name 96,Onion,1000.0,10
+Production Food Name 96,Bottle Gourd,2.0,4
+Production Food Name 96,Nutmeg,1.0,180
+Production Food Name 96,Urad Dal,1.0,180
+Production Food Name 96,Soybean,15.0,30
+Production Food Name 52,Spinach,70.0,3
+Production Food Name 52,Tofu,1111.0,7
+Production Food Name 52,Black Pepper,10.0,180
+Production Food Name 52,Paneer,5.0,7
+Production Food Name 52,Sour Cream,25.0,7
+Production Food Name 97,Celery,3780.0,5
+Production Food Name 97,Turmeric,2100.0,365
+Production Food Name 97,Moong Dal,90.0,180
+Production Food Name 97,Fenugreek Leaves,90.0,5
+Production Food Name 98,Corn,900.0,7
+Production Food Name 98,Soybean,5.0,30
+Production Food Name 98,Rice,5.0,180
+Production Food Name 98,Leeks,10.0,5
+Production Food Name 98,Yogurt,15.0,10
+Production Food Name 98,Rice,10.0,180
+Production Food Name 98,Zucchini,5.0,5
+Production Food Name 98,Sour Cream,10.0,7
+Production Food Name 66,Mozzarella Cheese,0.05,10
+Production Food Name 58,Vanilla Essence,80.0,365
+Production Food Name 61,Vanilla Essence,100.0,365
+Production Food Name 9,Tamarind,4.0,180
+Production Food Name 9,Yogurt,4.0,10
+Production Food Name 9,Molasses,4.0,180
+Production Food Name 9,Soybean,11.5,30
+Production Food Name 9,Black Pepper,50.0,180
+Production Food Name 99,Turmeric,5500.0,365
+Production Food Name 99,Masoor Dal,2000.0,180
+Production Food Name 99,Fenugreek Leaves,200.0,5
+Production Food Name 99,Cheese,120.0,14
+Production Food Name 99,Zucchini,600.0,5
+Production Food Name 99,Rice,300.0,180
+Production Food Name 99,Prawns,450.0,2
+Production Food Name 99,Black Pepper,40.0,180
+Production Food Name 100,Fenugreek Leaves,3500.0,5
+Production Food Name 100,Zucchini,600.0,5
+Production Food Name 100,Soybean,150.0,30
+Production Food Name 100,Cardamom,40.0,180
+Production Food Name 100,Rice,120.0,180
+Production Food Name 100,Pumpkin,40.0,10
+Production Food Name 100,Butter,15.0,30
+Production Food Name 42,Leeks,2500.0,5
+Production Food Name 42,Zucchini,50.0,5
+Production Food Name 42,Soybean,100.0,30
+Production Food Name 42,Nutmeg,50.0,180
+Production Food Name 77,Sour Cream,1000.0,7
+Production Food Name 77,Nutmeg,30.0,180
+Production Food Name 77,Soybean,600.0,30
+Production Food Name 101,Nutmeg,0.07,180
+Production Food Name 101,Rice,0.35,180
+Production Food Name 101,Maple Syrup,2.0,180
+Production Food Name 101,Green Beans,0.21,5
+Production Food Name 101,Mint,20.0,4
+Production Food Name 101,Zucchini,0.14,5
+Production Food Name 101,Onion,0.15,10
+Production Food Name 101,Soy Sauce,0.07,180
+Production Food Name 101,Coriander,8.0,180
+Production Food Name 101,Pumpkin,0.14,10
+Production Food Name 101,Urad Dal,0.14,180
+Production Food Name 101,Production Food Name 95,7.0,
+Production Food Name 101,Bottle Gourd,0.14,4
+Production Food Name 101,Asafoetida,0.14,365
+Production Food Name 101,Salt,0.29,365
+Production Food Name 101,Production Food Name 25,125.0,
+Production Food Name 101,Sour Cream,2.0,7
+Production Food Name 101,Coconut Milk,1.0,7
+Production Food Name 101,Soybean,1.07,30
+Production Food Name 101,Production Food Name 94,8.0,
+Production Food Name 101,Oil,5.0,180
+Production Food Name 101,Chana Dal,0.07,180
+Production Food Name 101,Production Food Name 93,8.0,
+Production Food Name 101,Production Food Name 96,295.0,
+Production Food Name 102,Corn,8000.0,7
+Production Food Name 102,Rice,80.0,180
+Production Food Name 102,Maple Syrup,1000.0,180
+Production Food Name 102,Mozzarella Cheese,80.0,10
+Production Food Name 102,Production Food Name 95,1000.0,
+Production Food Name 102,Production Food Name 103,400.0,
+Production Food Name 102,Sour Cream,2850.0,7
+Production Food Name 102,Coconut Milk,400.0,7
+Production Food Name 102,Green Chilli,800.0,7
+Production Food Name 102,Black Pepper,2000.0,180
+Production Food Name 102,Soybean,1000.0,30
+Production Food Name 102,Leeks,18000.0,5
+Production Food Name 102,Oil,2000.0,180
+Production Food Name 102,Cardamom,240.0,180
+Production Food Name 102,Production Food Name 93,1200.0,
+Production Food Name 103,Nutmeg,400.0,180
+Production Food Name 103,Rice,500.0,180
+Production Food Name 103,Green Beans,1000.0,5
+Production Food Name 103,Soy Sauce,500.0,180
+Production Food Name 103,Urad Dal,500.0,180
+Production Food Name 103,Bottle Gourd,500.0,4
+Production Food Name 103,Asafoetida,500.0,365
+Production Food Name 103,Chana Dal,1000.0,180
+Production Food Name 104,Cucumber,60.0,5
+Production Food Name 104,Oats,1354.0,
