@@ -1,0 +1,6 @@
+# Ignore all files in the CleanData directory
+CleanData/
+not needed/
+Raw_DATA/
+
+
