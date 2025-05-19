@@ -3,14 +3,11 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import matplotlib.pyplot as plt
-from xgboost import XGBRegressor
-from sklearn.metrics import r2_score
 import sqlite3
 import matplotlib.dates as mdates
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import RandomizedSearchCV
-from sklearn.metrics import mean_absolute_error
-import joblib
+from sklearn.metrics import mean_absolute_error, r2_score
 from datetime import timedelta
 
 # -----------------------------------------------------------------------------
@@ -21,7 +18,6 @@ if not os.path.exists("data.db"):
     sales_df = pd.read_excel("Sales Dataset OG.xlsx")
     prod_df = pd.read_excel("Production.xlsx")
     recipe_df = pd.read_excel("Food reciepe.xlsx")
-
     conn = sqlite3.connect("data.db")
     sales_df.to_sql("sales", conn, if_exists="replace", index=False)
     prod_df.to_sql("production", conn, if_exists="replace", index=False)
@@ -45,19 +41,38 @@ combined_df = combined_df.dropna(subset=["Date", "Food_Name", "Quantity_Sold"])
 combined_df["Date"] = pd.to_datetime(combined_df["Date"], errors="coerce")
 combined_df = combined_df.sort_values(["Food_Name", "Date"]).reset_index(drop=True)
 
-# -----------------------------------------------------------------------------
-# Streamlit Page Config
-# -----------------------------------------------------------------------------
 st.set_page_config(
     page_title="Restaurant Dish Demand Forecasting",
     layout="centered",
 )
 
-st.title("🍽️ Restaurant Dish Demand Forecasting")
-
-# -----------------------------------------------------------------------------
-# Helpers & Caching
-# -----------------------------------------------------------------------------
+# Animated Heading using st.markdown and HTML/CSS
+st.markdown(
+    '''
+    <h1 style="text-align:center; font-size:2.8rem; font-family: 'Segoe UI', sans-serif;">
+        <span class="fade-in">🍽️ Restaurant Dish Demand Forecasting</span>
+    </h1>
+    <style>
+    .fade-in {
+        animation: fadeIn 2s ease-in;
+        display: inline-block;
+    }
+    @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(-30px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+    .sidebar-anim {
+        animation: slideInLeft 1.5s cubic-bezier(.68,-0.55,.27,1.55);
+        display: block;
+    }
+    @keyframes slideInLeft {
+        0% { opacity: 0; transform: translateX(-40px); }
+        100% { opacity: 1; transform: translateX(0); }
+    }
+    </style>
+    ''',
+    unsafe_allow_html=True
+)
 
 FORECAST_HORIZON_DAYS = 7  # 7-Day Forecast
 
@@ -72,121 +87,6 @@ def load_recipe_df():
 
 recipe_df = load_recipe_df()
 
-@st.cache_data(show_spinner=False)
-def engineer_features(dish_df: pd.DataFrame) -> pd.DataFrame:
-    """Create time‑based and lag features for the model."""
-    # Aggregate to daily level (ensures continuous date index)
-    dish_df = (
-        dish_df.set_index("Date")
-                .resample("D")
-                .sum(numeric_only=True)
-                .fillna(0)
-                .reset_index()
-    )
-
-    # Basic calendar features
-    dish_df["day_of_week"] = dish_df["Date"].dt.dayofweek
-    dish_df["is_weekend"] = dish_df["day_of_week"].isin([5, 6]).astype(int)
-    dish_df["month"] = dish_df["Date"].dt.month
-
-    # Lag features (previous 1‑7 & 14 days)
-    for lag in range(1, 8):
-        dish_df[f"lag_{lag}"] = dish_df["Quantity_Sold"].shift(lag)
-    dish_df["lag_14"] = dish_df["Quantity_Sold"].shift(14)
-
-    # Rolling means
-    dish_df["roll_7"] = dish_df["Quantity_Sold"].shift(1).rolling(window=7).mean()
-    dish_df["roll_14"] = dish_df["Quantity_Sold"].shift(1).rolling(window=14).mean()
-
-    # Sales difference
-    dish_df["sales_diff"] = dish_df["Quantity_Sold"].diff()
-
-    # Drop the rows that contain NaNs after lag/rolling calc
-    return dish_df.dropna().reset_index(drop=True)
-
-@st.cache_resource(show_spinner=False)
-def train_model(feature_df: pd.DataFrame):
-    """Train an XGBoost regressor and return model, R², and test index for plotting."""
-    FEATURES = [
-        "day_of_week", "is_weekend", "month",
-        "lag_1", "lag_2", "lag_3", "lag_4", "lag_5", "lag_6", "lag_7", "lag_14",
-        "roll_7", "roll_14", "sales_diff",
-    ]
-
-    target = "Quantity_Sold"
-    split_idx = int(len(feature_df) * 0.8)
-
-    X_train = feature_df.loc[:split_idx - 1, FEATURES]
-    y_train = feature_df.loc[:split_idx - 1, target]
-    X_test = feature_df.loc[split_idx:, FEATURES]
-    y_test = feature_df.loc[split_idx:, target]
-
-    model = XGBRegressor(
-        objective="reg:squarederror",
-        n_estimators=300,
-        learning_rate=0.1,
-        max_depth=6,
-        subsample=0.8,
-        colsample_bytree=0.8,
-        random_state=42,
-    )
-
-    model.fit(X_train, y_train)
-    y_pred = model.predict(X_test)
-    r2 = r2_score(y_test, y_pred)
-
-    return model, r2, feature_df.loc[split_idx:, "Date"], y_test, y_pred, FEATURES
-
-@st.cache_data(show_spinner=False)
-def make_forecast(_model, base_df: pd.DataFrame) -> pd.DataFrame:
-    """Generate next 7-day forecast using recursive strategy."""
-    forecast_rows = []
-    last_known = base_df.copy()
-
-    for i in range(1, FORECAST_HORIZON_DAYS + 1):
-        next_date = last_known["Date"].max() + pd.Timedelta(days=1)
-        day_of_week = next_date.dayofweek
-        is_weekend = int(day_of_week in [5, 6])
-        month = next_date.month
-
-        # Lag values from most recent data
-        recent_sales = last_known["Quantity_Sold"].values
-        lags = {f"lag_{j}": recent_sales[-j] if len(recent_sales) >= j else 0 for j in range(1, 8)}
-        lag_14_val = recent_sales[-14] if len(recent_sales) >= 14 else 0
-        sales_diff = recent_sales[-1] - recent_sales[-2] if len(recent_sales) >= 2 else 0
-        roll_7 = last_known["Quantity_Sold"].tail(7).mean() if len(last_known) >= 7 else recent_sales.mean()
-        roll_14 = last_known["Quantity_Sold"].tail(14).mean() if len(last_known) >= 14 else recent_sales.mean()
-
-        feature_row = {
-            "day_of_week": day_of_week,
-            "is_weekend": is_weekend,
-            "month": month,
-            "lag_14": lag_14_val,
-            "roll_7": roll_7,
-            "roll_14": roll_14,
-            "sales_diff": sales_diff,
-            **lags,
-        }
-
-        X_next = pd.DataFrame([feature_row])
-        # Ensure column ordering
-        X_next = X_next[[
-            "day_of_week", "is_weekend", "month",
-            "lag_1", "lag_2", "lag_3", "lag_4", "lag_5", "lag_6", "lag_7", "lag_14",
-            "roll_7", "roll_14", "sales_diff",
-        ]]
-
-        y_hat = _model.predict(X_next)[0]
-        forecast_rows.append({"Date": next_date, "Forecast": max(0, round(y_hat))})
-
-        # Append the new prediction to last_known for recursive lags
-        last_known = pd.concat([
-            last_known,
-            pd.DataFrame({"Date": [next_date], "Quantity_Sold": [y_hat]})
-        ], ignore_index=True)
-
-    return pd.DataFrame(forecast_rows)
-
 # ---- Weather Data Integration Functions ----
 def load_file_weath():
     # Dummy loader: replace with your actual file/logic
@@ -197,17 +97,9 @@ def weatherdata(date_str, lines_fw):
     # Should return a dict like {"temperature": float}
     return {"temperature": 25.0}, lines_fw
 
-# -----------------------------------------------------------------------------
-# Sidebar: dish selector
-# -----------------------------------------------------------------------------
-
+st.sidebar.markdown('<div class="sidebar-anim"><h2>🔍 Select Dish</h2></div>', unsafe_allow_html=True)
 dish_names = unique_dishes(combined_df)
-st.sidebar.header("🔍 Select Dish")
-selected_dish = st.sidebar.selectbox("Dish Name", dish_names, index=0)
-
-# -----------------------------------------------------------------------------
-# Main: modelling & visualisation
-# -----------------------------------------------------------------------------
+selected_dish = st.sidebar.selectbox("Dish Name", dish_names, index=0, key="dish_select")
 
 if selected_dish:
     st.subheader(f"📈 Forecast for: {selected_dish}")
@@ -287,7 +179,6 @@ if selected_dish:
     ax.xaxis.set_major_locator(mdates.AutoDateLocator())
     fig.autofmt_xdate()
     st.pyplot(fig)
-    # --- Forecast next 7 days ---
     forecast_rows = []
     df_extended = df_feat.copy()
     last_date = df_extended["Date"].max()

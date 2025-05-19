@@ -2,7 +2,4 @@ streamlit
 pandas
 numpy
 matplotlib
-xgboost
 scikit-learn
-joblib
-python-dotenv
