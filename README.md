@@ -67,12 +67,6 @@ streamlit run app.py
 
 ---
 
-## Screenshots
-
-![App Screenshot](image/README/SIM.jpg)
-
----
-
 ## License
 
 MIT License
@@ -81,5 +75,5 @@ MIT License
 
 ## Credits
 
-- Developed by Himanshu and contributors
+- Developed by Shalini ,Himanshu and Jaival
 - Powered by Streamlit, scikit-learn, XGBoost, and pandas
