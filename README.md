@@ -1,4 +1,4 @@
-# 🍽️ Smart Inventory Management
+# 🍽️ SMART INVENTORY MANAGEMENT FOR RESTAURANTS AND CAFETERIA
 
 A robust Streamlit web app for forecasting restaurant dish demand and ingredient requirements using machine learning (RandomForestRegressor/XGBoost) and historical sales data. The app supports per-dish models, weather-aware features, and interactive visualizations.
 
@@ -69,7 +69,7 @@ streamlit run app.py
 
 ## Screenshots
 
-![App Screenshot](screenshot.png)
+![App Screenshot](image/README/SIM.jpg)
 
 ---
 
