@@ -3,5 +3,12 @@ CleanData/
 not needed/
 Raw_DATA/
 
-Presentation/
+# Ignore sensitive files
+.env
+*.pem
+
+#files to ignore
+data.db
+open_meteo_weather.json
+rules.txt
 

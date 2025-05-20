@@ -9,7 +9,19 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import RandomizedSearchCV
 from sklearn.metrics import mean_absolute_error, r2_score
 from datetime import timedelta
+import joblib
+from dotenv import load_dotenv
+import os
 
+# Load environment variables from .env file
+load_dotenv()
+
+# Retrieve variables from the environment
+latitude = float(os.getenv("LATITUDE", "0.0"))
+longitude = float(os.getenv("LONGITUDE", "0.0"))
+timezone = os.getenv("TIMEZONE", "UTC")
+weather_file = os.getenv("WEATHER_FILE", "weather.json")
+base_url = os.getenv("BASE_URL","")
 # -----------------------------------------------------------------------------
 # Data Loading and Preparation (from SQLite)
 # -----------------------------------------------------------------------------
@@ -88,18 +100,88 @@ def load_recipe_df():
 recipe_df = load_recipe_df()
 
 # ---- Weather Data Integration Functions ----
+
+import requests
+from datetime import datetime
+import json
+import os
+
+latitude = 39.3995
+longitude = -84.5613
+timezone = "America%2FNew_York"
+
+weather_file = "open_meteo_weather.json"
+
 def load_file_weath():
-    # Dummy loader: replace with your actual file/logic
+    if os.path.exists(weather_file):
+        with open(weather_file, "r") as fw:      
+            return fw.readlines()
     return None
 
-def weatherdata(date_str, lines_fw):
-    # Dummy weather: replace with your actual API/file logic
-    # Should return a dict like {"temperature": float}
-    return {"temperature": 25.0}, lines_fw
+
+
+def weatherdata(date_str,lines_fw):
+    try:
+        for line in lines_fw:
+            try:
+                data = json.loads(line)
+                if data["daily"]["time"][0] == date_str:
+                    # If date already exists, use it
+                    #print(f"Using cached data for {date_str}")
+                    day_data = data["daily"]
+                    return {
+                        "temperature": (day_data["temperature_2m_max"][0] + day_data["temperature_2m_min"][0]) / 2,
+                        "weather_main": "Rain" if day_data["precipitation_sum"][0] > 0 else "Clear"
+                    },lines_fw
+            except Exception as e:
+                continue  # Skip bad lines
+    except Exception as e:
+            print(f"Error retrieving weather data from file")
+    # If not found in file, call API
+    try:
+        url = (
+            f"{base_url}"
+            f"latitude={latitude}&longitude={longitude}"
+            f"&start_date={date_str}&end_date={date_str}"
+            f"&daily=temperature_2m_max,temperature_2m_min,precipitation_sum"
+            f"&timezone={timezone}"
+        )
+
+        response = requests.get(url)
+        if response.status_code == 200:
+            data = response.json()
+
+            # Append to file
+            with open(weather_file, "a") as f:
+                f.write(json.dumps(data) + "\n")
+
+            lines_fw = load_file_weath()
+
+            day_data = data["daily"]
+            return {
+                "temperature": (day_data["temperature_2m_max"][0] + day_data["temperature_2m_min"][0]) / 2,
+                "weather_main": "Rain" if day_data["precipitation_sum"][0] > 0 else "Clear",   
+            },lines_fw
+
+        else:
+            print(f"Open-Meteo API error on {date_str}: Status {response.status_code}")
+            return None
+
+    except Exception as e:
+        print(f"Error on {date_str}: {e}")
+        return None
+
+
+
 
 st.sidebar.markdown('<div class="sidebar-anim"><h2>🔍 Select Dish</h2></div>', unsafe_allow_html=True)
 dish_names = unique_dishes(combined_df)
 selected_dish = st.sidebar.selectbox("Dish Name", dish_names, index=0, key="dish_select")
+
+
+lines_fw = load_file_weath()
+st.sidebar.markdown("---")
+
 
 if selected_dish:
     st.subheader(f"📈 Forecast for: {selected_dish}")
@@ -110,6 +192,7 @@ if selected_dish:
     # --- Feature Engineering ---
     df_feat = dish_df[["Date", "Quantity_Sold"]].copy()
     df_feat = df_feat.set_index("Date").resample("D").sum().fillna(0).reset_index()
+    
     df_feat["sales_diff"] = df_feat["Quantity_Sold"].diff()
     df_feat["sales_diff_7"] = df_feat["Quantity_Sold"].diff(7)
     df_feat["sales_diff_14"] = df_feat["Quantity_Sold"].diff(14)
@@ -120,13 +203,18 @@ if selected_dish:
     df_feat["rolling_14_day_avg"] = df_feat["Quantity_Sold"].shift(1).rolling(14).mean()
     # --- Weather integration for this dish ---:
     df_feat["weather_date"] = df_feat["Date"].dt.strftime("%Y-%m-%d")
+    # Weather data integration
     df_feat["temperature"] = 0.0
-    lines_fw = load_file_weath()
+
+    print(f"Loading weather data for {selected_dish}...")
     for i, row in df_feat.iterrows():
         date_str = row["weather_date"]
         weather, lines_fw = weatherdata(date_str, lines_fw)
         if weather:
             df_feat.at[i, "temperature"] = weather["temperature"]
+
+
+    print(f"Weather data loaded for {selected_dish}.")
     features_rf = [
         "sales_diff_7", "sales_diff_14", "sales_diff",
         "lag_1_day_sales", "rolling_14_day_avg", "rolling_7_day_avg",
@@ -157,15 +245,22 @@ if selected_dish:
         n_jobs=-1
     )
     random_search.fit(X_train, y_train)
-    best_model = random_search.best_estimator_
-    model = best_model
+    model = random_search.best_estimator_
+
+    # pkl_file_path = f"./pkl_files/{selected_dish}_model.pkl"
+    # print(f"Loading model from: {pkl_file_path}")  # Print the file path
+    # model = joblib.load(pkl_file_path)
+
+    # Make predictions
     y_pred = model.predict(X_test)
     mae = mean_absolute_error(y_test, y_pred)
     r2 = r2_score(y_test, y_pred)
     st.success(f"Trained and saved new RF model for {selected_dish}. MAE: {mae:.2f}, R²: {r2:.2f}")
-    
+
+
     st.metric(label="R² Score", value=f"{r2:.3f}")
     st.metric(label="MAE", value=f"{mae:.2f}")
+    #st.metric(label="Accuracy", value=f"{accuracy:.2f}")
     # Plot Actual vs Predicted on test set
     fig, ax = plt.subplots(figsize=(8, 3))
     ax.plot(df_feat["Date"][split:], y_test, label="Actual", linewidth=2)
@@ -182,7 +277,7 @@ if selected_dish:
     forecast_rows = []
     df_extended = df_feat.copy()
     last_date = df_extended["Date"].max()
-    lines_fw = load_file_weath() 
+
     for i in range(7):
         forecast_date = last_date + timedelta(days=i + 1)
         feature_row = {}
