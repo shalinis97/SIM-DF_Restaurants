@@ -11,4 +11,5 @@ Raw_DATA/
 data.db
 open_meteo_weather.json
 rules.txt
+.DS_Store
 
