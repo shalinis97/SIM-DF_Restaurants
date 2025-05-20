@@ -1,2 +1,2 @@
-web: streamlit run Application.py --server.port=$PORT --server.enableCORS=false
+web: streamlit run application.py --server.port=$PORT --server.enableCORS=false
 
