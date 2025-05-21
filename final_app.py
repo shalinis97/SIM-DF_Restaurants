@@ -21,7 +21,7 @@ load_dotenv()
 latitude = float(os.getenv("LATITUDE", "0.0"))
 longitude = float(os.getenv("LONGITUDE", "0.0"))
 timezone = os.getenv("TIMEZONE", "UTC")
-weather_file = os.getenv("WEATHER_FILE", "weather.json")
+weather_file = os.getenv("WEATHER_FILE", "open_meteo_weather.json")
 base_url = os.getenv("BASE_URL","")
 # -----------------------------------------------------------------------------
 # Data Loading and Preparation (from SQLite)

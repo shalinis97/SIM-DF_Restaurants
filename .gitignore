@@ -9,7 +9,7 @@ Raw_DATA/
 
 #files to ignore
 data.db
-open_meteo_weather.json
+#open_meteo_weather.json
 rules.txt
 .DS_Store
 
