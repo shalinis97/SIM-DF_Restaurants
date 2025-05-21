@@ -258,9 +258,31 @@ if selected_dish:
     st.success(f"Trained and saved new RF model for {selected_dish}. MAE: {mae:.2f}, R²: {r2:.2f}")
 
 
-    st.metric(label="R² Score", value=f"{r2:.3f}")
-    st.metric(label="MAE", value=f"{mae:.2f}")
-    #st.metric(label="Accuracy", value=f"{accuracy:.2f}")
+    # Add a section in the sidebar for Model Analysis
+    st.sidebar.markdown('<div class="sidebar-anim"><h2>📊 Model Analysis</h2></div>', unsafe_allow_html=True)
+    if st.sidebar.button("Model Analysis", key="model_analysis_button"):
+        st.subheader(f"📊 Model Analysis for: {selected_dish}")
+
+        # Display R² Score and MAE
+        st.metric(label="R² Score", value=f"{r2:.3f}")
+        st.metric(label="MAE", value=f"{mae:.2f}")
+
+        # Display Feature Importance
+        with st.expander("ℹ️ Feature Importance (Top 10)"):
+            if hasattr(model, 'feature_importances_'):
+                importance = (
+                    pd.DataFrame({"feature": features_rf, "importance": model.feature_importances_})
+                      .sort_values("importance", ascending=False)
+                      .head(10)
+                      .reset_index(drop=True)
+                )
+                st.table(importance)
+            else:
+                st.info("Feature importance not available for this model.")
+
+        # Stop further rendering when Model Analysis is selected
+        st.stop()
+
     # Plot Actual vs Predicted on test set
     fig, ax = plt.subplots(figsize=(8, 3))
     ax.plot(df_feat["Date"][split:], y_test, label="Actual", linewidth=2)
